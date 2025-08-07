@@ -1,0 +1,58 @@
+export const transectionData = [
+  {
+    id: '01',
+    referenceNo: 'TF123456789',
+    depositeFrom: 'Brack bank',
+    depositeTo: 'NRBC Bank',
+    type: 'Cash',
+    status: 'pending',
+    amount: '500',
+    requestedBy: 'Md Jwel Rana (admin)',
+    transactionDate: '04 oct 23 09:40 am',
+    attachment:
+      'https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/BG.svg',
+    reason: 'wrong attachment ',
+  },
+  {
+    id: '02',
+    referenceNo: 'TF123456789',
+    depositeFrom: 'Dhaka bank',
+    depositeTo: 'NRBC Bank',
+    type: 'Cash',
+    status: 'pending',
+    amount: '500',
+    requestedBy: 'Md uzzal (staff)',
+    transactionDate: '04 oct 23 09:40 am',
+    attachment:
+      'https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/BG.svg',
+    reason: 'wrong attachment gdfgfghfg dfgdf gdfgd gdf sd sdfsdf ',
+  },
+  {
+    id: '03',
+    referenceNo: 'TF123456789',
+    depositeFrom: 'Dhaka bank',
+    depositeTo: 'NRBC Bank',
+    type: 'Cash',
+    status: 'approved',
+    amount: '500',
+    requestedBy: 'Md uzzal (admin)',
+    transactionDate: '04 oct 23 09:40 am',
+    attachment:
+      'https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/BG.svg',
+    reason: 'wrong attachment gdfgfghfg dfgdf gdfgd gdf sd sdfsdf ',
+  },
+  {
+    id: '04',
+    referenceNo: 'TF123456789',
+    depositeFrom: 'Dhaka bank',
+    depositeTo: 'NRBC Bank',
+    type: 'Cash',
+    status: 'rejected',
+    amount: '500',
+    requestedBy: 'Md uzzal (staff)',
+    transactionDate: '04 oct 23 09:40 am',
+    attachment:
+      'https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/BG.svg',
+    reason: 'wrong attachment gdfgfghfg dfgdf gdfgd gdf sd sdfsdf ',
+  },
+];

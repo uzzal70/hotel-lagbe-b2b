@@ -1,0 +1,58 @@
+# Node.js
+node_modules
+*.local
+
+# Build output
+dist/
+dist-ssr/
+dist.zip
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependency directories
+pnp-search/
+.pnp/
+.cache/
+
+# Thunder specific files or directories
+thunder/
+
+# Postman specific files or directories
+postman/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.htaccess
+# Sentry Config File
+.env.sentry-build-plugin

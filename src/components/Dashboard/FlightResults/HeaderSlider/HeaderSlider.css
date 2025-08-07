@@ -1,0 +1,51 @@
+/* .airlines-slider .slick-arrow .slick-next {
+  display: none !important;
+}
+.airlines-slider .slick-arrow .slick-prev {
+  display: none !important;
+} */
+
+/* .airlines-slider .slick-prev {
+  color: var(--white);
+  left: 0px;
+  z-index: 1;
+  font-size: 15px !important;
+  padding: 0 5px !important;
+  background-color: var(--secondary-color);
+  height: 100%;
+  opacity: 0;
+} */
+
+/* .airlines-slider:hover .slick-prev {
+  display: none;
+} */
+
+/* .airlines-slider .slick-next {
+  color: var(--white);
+  z-index: 1;
+  right: 0px;
+  font-size: 15px !important;
+  padding: 0 5px !important;
+  background-color: var(--secondary-color);
+  height: 100%;
+  opacity: 0;
+} */
+/* .airlines-slider:hover .slick-next {
+  display: none;
+} */
+
+@media all and (max-width: 899px) and (min-width: 700px) {
+  .airlines-slider .slick-list {
+    width: 500px !important;
+  }
+}
+@media all and (max-width: 699px) and (min-width: 500px) {
+  .airlines-slider .slick-list {
+    width: 400px !important;
+  }
+}
+@media all and (max-width: 499px) and (min-width: 200px) {
+  .airlines-slider .slick-list {
+    width: 300px !important;
+  }
+}

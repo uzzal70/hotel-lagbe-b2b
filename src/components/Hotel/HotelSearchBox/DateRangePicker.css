@@ -1,0 +1,22 @@
+.date-picker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0f2f1; /* Custom background */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.custom-date-picker .rdrMonth {
+  width: 300px; /* Adjust month width */
+}
+
+.custom-date-picker .rdrDayNumber span {
+  color: var(--primary); /* Custom font color */
+  font-weight: bold;
+}
+
+.custom-date-picker .rdrSelected,
+.custom-date-picker .rdrInRange {
+  background-color: var(--primary) !important; /* Custom selection color */
+}

@@ -1,0 +1,52 @@
+# Redirect from the old homepage to the new homepage
+/*    /index.html 200
+
+/old-home /new-home 301
+
+# Redirect all paths under /blog to a new domain
+
+/blog/\* https://example.com/blog/:splat 301!
+
+# Force HTTPS for the entire site
+
+/\* https://example.com/:splat 301!
+
+# Custom 404 page
+
+/\* /404.html 404
+
+# Rewrite requests to an API endpoint
+
+/api/\* https://api.example.com/:splat 200
+
+# Redirect based on query parameters
+
+/query-redirect:
+
+# Redirect to /new-page if query parameter "source" is "old"
+
+/old-page?source=old /new-page 301
+
+# Redirect to /another-new-page if query parameter "source" is "another"
+
+/old-page?source=another /another-new-page 301
+
+# Complex redirects and rewrites
+
+/complex-redirects:
+
+# Redirect /page1 to /page-one
+
+/page1 /page-one 301
+
+# Redirect /page2 to /page-two
+
+/page2 /page-two 301
+
+# Rewrite /api/_ to https://api.example.com/_
+
+/api/\* https://api.example.com/:splat 200
+
+# Catch-all redirect
+
+/\* / 301

@@ -1,0 +1,66 @@
+/* -------Custom Checkbox */
+.custom-checkbox-air {
+  display: flex;
+  align-items: start;
+  margin-bottom: 8px;
+}
+
+.custom-checkbox-air input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--stroke);
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.custom-checkbox-air input:checked {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.custom-checkbox-air label {
+  width: 85%;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+
+/* -------ho Checkbox */
+.ho-checkbox-air {
+  display: flex;
+  align-items: start;
+  margin-bottom: 5px;
+}
+
+.ho-checkbox-air input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--stroke);
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.ho-checkbox-air input:checked {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.ho-checkbox-air label {
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
