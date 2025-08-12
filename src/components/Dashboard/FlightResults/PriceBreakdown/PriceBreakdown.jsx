@@ -5,13 +5,18 @@ import CloseIcon from '@mui/icons-material/Close';
 import commaNumber from 'comma-number';
 import companyInfo from '../../../../common/companyInfo';
 
+const formatPrice = (value, quantity = 1, decimals = 1) => {
+  const num = parseFloat(value || 0) * parseFloat(quantity || 1);
+  const rounded = parseFloat(num.toFixed(decimals)); // removes trailing .0
+  return `${commaNumber(rounded)} ${companyInfo?.currencyCode}`;
+};
+
 const PriceBreakdown = ({
   data,
   handleClose,
   totalClientPrice,
   grossTotalPrice,
   ait,
-  system,
   extraCommission,
 }) => {
   const totalDiffGross = totalClientPrice < grossTotalPrice;
@@ -99,24 +104,11 @@ const PriceBreakdown = ({
                         ( {item.passengerCount} )
                       </td>
                       <td>
-                        {commaNumber(
-                          parseInt(item.basePrice) *
-                            parseInt(item.passengerCount)
-                        )}{' '}
-                        {companyInfo?.currencyCode}
+                        {formatPrice(item.basePrice, item.passengerCount)}{' '}
                       </td>
+                      <td>{formatPrice(item.tax, item.passengerCount)} </td>
                       <td>
-                        {commaNumber(
-                          parseInt(item.tax) * parseInt(item.passengerCount)
-                        )}{' '}
-                        {companyInfo?.currencyCode}
-                      </td>
-                      <td>
-                        {commaNumber(
-                          parseInt(item.totalPrice) *
-                            parseInt(item.passengerCount)
-                        )}{' '}
-                        {companyInfo?.currencyCode}
+                        {formatPrice(item.totalPrice, item.passengerCount)}{' '}
                       </td>
                     </tr>
                   ))}
@@ -181,24 +173,13 @@ const PriceBreakdown = ({
                   </td>
 
                   <td>
-                    {commaNumber(
-                      parseInt(item?.clientBasePrice || item.basePrice) *
-                        parseInt(item.passengerCount)
+                    {formatPrice(
+                      item.clientBasePrice || item.basePrice,
+                      item.passengerCount
                     )}{' '}
-                    {companyInfo?.currencyCode}
                   </td>
-                  <td>
-                    {commaNumber(
-                      parseInt(item.tax) * parseInt(item.passengerCount)
-                    )}{' '}
-                    {companyInfo?.currencyCode}
-                  </td>
-                  <td>
-                    {commaNumber(
-                      parseInt(item.clientPrice) * parseInt(item.passengerCount)
-                    )}{' '}
-                    {companyInfo?.currencyCode}
-                  </td>
+                  <td>{formatPrice(item.tax, item.passengerCount)} </td>
+                  <td>{formatPrice(item.clientPrice, item.passengerCount)} </td>
                 </tr>
               ))}
             </tbody>
